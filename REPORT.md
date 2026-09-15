@@ -1,32 +1,36 @@
-# Explaining our demand model - Lab 2 report
+# Lab 2 report - explaining our demand model
 
-*Two people, one model, two kinds of explanation. Replace every arrow line with a real sentence;
-every number gets a unit.*
+**Authors:** _replace this line with your name_
+<!-- ^ You and your partner BOTH edit THIS ONE LINE with your name, each on your own branch.
+     When the second pull request merges you'll get a merge conflict right here - that's on
+     purpose. Resolve it by keeping BOTH names. Everything else below is in separate sections,
+     so those merge cleanly. -->
 
-## 1. The quick answer: built-in importances
+*Two people, one model, two kinds of explanation. Fill in YOUR section; leave your partner's alone.
+Replace every `=>` with a real sentence; every number gets a unit.*
+
+## Global - what the model leans on overall (Partner A)
 ![built-in importances](images/importances_builtin.png)
 
 => One sentence: which feature does the model lean on most, by magnitude alone?
 
-## 2. The honest answer: SHAP global (beeswarm)
 ![SHAP beeswarm](images/shap_global.png)
 
 => One sentence: which feature is #1, and does a HIGH value push demand up or down?
 
-## 3. Is the model any good?
+## Local - one hour explained (Partner B)
 ![predicted vs actual](images/predicted_vs_actual.png)
 
 => One sentence: does it track the diagonal? roughly how far off is a typical hour?
 
-## 4. Explaining one hour: SHAP local (waterfall)
 ![SHAP waterfall for the peak hour](images/shap_local.png)
 
 => One sentence: for the peak hour, what pushed the prediction up, and what pulled it down?
 
-## 5. (Optional) Global meets local
+## Combined (both, optional)
 ![SHAP dependence](images/shap_dependence.png)
 
-=> One sentence tying Lab 1 to Lab 2: *"it's the clock as much as the thermometer"* - say it in your words.
+=> One sentence tying Lab 1 to Lab 2: *"it's the clock as much as the thermometer"* - in your words.
 
 ## What this explanation can't tell us
 => One honest sentence. (SHAP explains THIS model, not the real world; one summer, one region; correlation, not proof.)
